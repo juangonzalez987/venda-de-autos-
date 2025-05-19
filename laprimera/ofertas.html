@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ofertas Especiales | Concesionario Premium</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <style>
+        .oferta-tag {
+            background: var(--rojo);
+            color: white;
+            padding: 0.3rem 0.8rem;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            position: absolute;
+            top: 10px;
+            right: 10px;
+        }
+        .auto-card {
+            position: relative;
+        }
+        .precio-tachado {
+            text-decoration: line-through;
+            color: var(--gris-oscuro);
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>OFERTAS ESPECIALES</h1>
+    </header>
+    
+    <nav>
+        <a href="index.html">Inicio</a>
+        <a href="inventario.html">Inventario</a>
+        <a href="ofertas.html" class="active">Ofertas</a>
+        <a href="contacto.html">Contacto</a>
+    </nav>
+
+    <main class="contenedor-autos">
+        <!-- Oferta 1 -->
+        <div class="auto-card">
+            <span class="oferta-tag">15% OFF</span>
+            <img src="assets/img/bmw.jpg" alt="BMW M8 Competition">
+            <div class="auto-info">
+                <h3>BMW M8 Competition</h3>
+                <p><strong>Año:</strong> 2022</p>
+                <p><strong>Motor:</strong> V8 4.4L Twin-Turbo</p>
+                <p>
+                    <span class="precio-tachado">$145,000 USD</span><br>
+                    <strong>Precio:</strong> <span class="price">$123,250 USD</span>
+                </p>
+                <a href="contacto.html?auto=bmw" class="btn">¡Aprovechar!</a>
+            </div>
+        </div>
+
+        <!-- Oferta 2 -->
+        <div class="auto-card">
+            <span class="oferta-tag">Financiación 0%</span>
+            <img src="assets/img/audi.jpg" alt="Audi R8">
+            <div class="auto-info">
+                <h3>Audi R8 V10</h3>
+                <p><strong>Año:</strong> 2020</p>
+                <p><strong>Motor:</strong> V10 5.2L</p>
+                <p><strong>Precio:</strong> <span class="price">$180,000 USD</span></p>
+                <p style="color: var(--rojo); font-size: 0.9rem;">36 meses sin intereses</p>
+                <a href="contacto.html?auto=audi" class="btn">¡Aprovechar!</a>
+            </div>
+        </div>
+
+        <!-- Oferta 3 -->
+        <div class="auto-card">
+            <span class="oferta-tag">Paquete Premium</span>
+            <img src="assets/img/mercedes.jpg" alt="Mercedes-AMG GT">
+            <div class="auto-info">
+                <h3>Mercedes-AMG GT R</h3>
+                <p><strong>Año:</strong> 2021</p>
+                <p><strong>Motor:</strong> V8 4.0L Biturbo</p>
+                <p>
+                    <span class="precio-tachado">$175,000 USD</span><br>
+                    <strong>Precio:</strong> <span class="price">$165,000 USD</span>
+                </p>
+                <p style="color: var(--rojo); font-size: 0.9rem;">Incluye garantía extendida</p>
+                <a href="contacto.html?auto=mercedes" class="btn">¡Aprovechar!</a>
+            </div>
+        </div>
+    </main>
+
+    <section style="background: var(--negro); color: white; text-align: center; padding: 2rem;">
+        <h2>¿Necesitas más información?</h2>
+        <p style="margin: 1rem 0;">Nuestros asesores están listos para ayudarte</p>
+        <a href="contacto.html" class="btn">Contáctanos</a>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Concesionario Premium. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Comprar Auto</title>
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <style>
+    .formulario-compra {
+      max-width: 600px;
+      margin: 2rem auto;
+      padding: 2rem;
+      background: white;
+      border-radius: 8px;
+    }
+    input, textarea {
+      width: 100%;
+      padding: 0.8rem;
+      margin-bottom: 1rem;
+      border: 1px solid #ddd;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>COMPRA TU AUTO</h1>
+  </header>
+  
+  <nav>
+    <a href="index.html">Inicio</a>
+    <a href="inventario.html">Inventario</a>
+    <a href="ofertas.html">Ofertas</a>
+    <a href="contacto.html">Contacto</a>
+  </nav>
+  
+  <div class="formulario-compra">
+    <h2 id="auto-seleccionado">Estás comprando: Ferrari 488 GTB</h2>
+    <form action="gracias.html" method="GET">
+      <input type="text" placeholder="Nombre completo" required>
+      <input type="email" placeholder="Correo electrónico" required>
+      <input type="tel" placeholder="Teléfono">
+      <textarea placeholder="Mensaje adicional"></textarea>
+      <button type="submit" class="btn">Confirmar Compra</button>
+    </form>
+  </div>
+
+  <script>
+    // Detecta el auto seleccionado desde la URL
+    const params = new URLSearchParams(window.location.search);
+    const auto = params.get('auto');
+    
+    if(auto) {
+      const titulo = document.getElementById('auto-seleccionado');
+      if(auto === 'ferrari') titulo.textContent = 'Estás comprando: Ferrari 488 GTB';
+      if(auto === 'porsche') titulo.textContent = 'Estás comprando: Porsche 911 Turbo';
+    }
+  </script>
+</body>
+</html>

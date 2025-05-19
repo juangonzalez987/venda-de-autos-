@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inventario Completo | Concesionario Premium</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <style>
+        .filtros {
+            background: var(--negro);
+            padding: 1rem;
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+        .filtros select, .filtros input {
+            padding: 0.5rem;
+            border-radius: 4px;
+            border: none;
+        }
+        .filtros .btn {
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>INVENTARIO COMPLETO</h1>
+    </header>
+    
+    <nav>
+        <a href="index.html">Inicio</a>
+        <a href="inventario.html" class="active">Inventario</a>
+        <a href="ofertas.html">Ofertas</a>
+        <a href="contacto.html">Contacto</a>
+    </nav>
+
+    <!-- Filtros de búsqueda -->
+    <section class="filtros">
+        <select>
+            <option>Marca</option>
+            <option>Ferrari</option>
+            <option>Porsche</option>
+            <option>Lamborghini</option>
+        </select>
+        <select>
+            <option>Precio</option>
+            <option>Menos de $100k</option>
+            <option>$100k - $200k</option>
+            <option>Más de $200k</option>
+        </select>
+        <input type="text" placeholder="Buscar modelo...">
+        <a href="#" class="btn">Filtrar</a>
+    </section>
+
+    <!-- Listado de autos -->
+    <main class="contenedor-autos">
+        <!-- Auto 1 -->
+        <div class="auto-card">
+            <img src="assets/img/ferrari.jpg" alt="Ferrari 488 GTB">
+            <div class="auto-info">
+                <h3>Ferrari 488 GTB</h3>
+                <p><strong>Año:</strong> 2022</p>
+                <p><strong>Motor:</strong> V8 3.9L Turbo</p>
+                <p><strong>Precio:</strong> <span class="price">$250,000 USD</span></p>
+                <a href="contacto.html?auto=ferrari" class="btn">Cotizar</a>
+            </div>
+        </div>
+
+        <!-- Auto 2 -->
+        <div class="auto-card">
+            <img src="assets/img/porsche.jpg" alt="Porsche 911 Turbo S">
+            <div class="auto-info">
+                <h3>Porsche 911 Turbo S</h3>
+                <p><strong>Año:</strong> 2023</p>
+                <p><strong>Motor:</strong> Bóxer 6 3.7L</p>
+                <p><strong>Precio:</strong> <span class="price">$205,000 USD</span></p>
+                <a href="contacto.html?auto=porsche" class="btn">Cotizar</a>
+            </div>
+        </div>
+
+        <!-- Auto 3 -->
+        <div class="auto-card">
+            <img src="assets/img/lambo.jpg" alt="Lamborghini Huracán">
+            <div class="auto-info">
+                <h3>Lamborghini Huracán</h3>
+                <p><strong>Año:</strong> 2021</p>
+                <p><strong>Motor:</strong> V10 5.2L</p>
+                <p><strong>Precio:</strong> <span class="price">$220,000 USD</span></p>
+                <a href="contacto.html?auto=lambo" class="btn">Cotizar</a>
+            </div>
+        </div>
+
+        <!-- Auto 4 -->
+        <div class="auto-card">
+            <img src="assets/img/mustang.jpg" alt="Ford Mustang Shelby">
+            <div class="auto-info">
+                <h3>Ford Mustang Shelby GT500</h3>
+                <p><strong>Año:</strong> 2023</p>
+                <p><strong>Motor:</strong> V8 5.2L Supercharged</p>
+                <p><strong>Precio:</strong> <span class="price">$95,000 USD</span></p>
+                <a href="contacto.html?auto=mustang" class="btn">Cotizar</a>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Concesionario Premium. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
